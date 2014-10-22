@@ -42,7 +42,7 @@ head.ready(function() {
         helpers:{
             overlay: {
                 locked: false,
-                css:{'background' : 'rgba(#000000, 0.6)'}
+                css:{'background' : 'rgba(#463223, 0.6)'}
             }
         }
 //        ,

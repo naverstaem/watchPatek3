@@ -250,7 +250,6 @@ header
 
 
 .specs
-  background: #ffffff
   padding-top: 70px
   +clr
   +box
@@ -258,21 +257,48 @@ header
     margin-bottom: 27px
   .specs_in
     @extend %in
-    width: 960px
     +clr
   &__items
+    position: relative
     float: left
-    width: 290px
     font-size: 18px
     margin-left: 160px
-    padding-bottom: 40px
     +box
+    padding: 30px 15px 50px 40px
+    background-color: #efebe1
+    +background-image(linear-gradient(to bottom, #f5ebdb 0%, #ebdbbd 100%))
+    .shadow
+      position: absolute
+      bottom: -20px
+      left: 50%
+      +transform(translateX(-50%))
+      content: ""
+      background: url(../img/shadow_small.png) no-repeat
+      width: 400px
+      height: 20px
+    .colors
+      display: inline-block
+      li
+        display: inline-block
+        margin-left: 18px
+        width: 20px
+        height: 20px
+        +border-radius(2px)
+        +background-clip(padding-box)
+        +box
+        &.blue
+          background: #1d4f8b
+        &.white
+          background: #ffffff
+        &.brown
+          background: #bd9f59
+
     &.short
       width: 220px
 
 
   &__item
-    color: #5a5a5a
+    color: #82785a
     margin-top: 28px
     font-family: 'conv_pfdintextcondpro-light'
     font-size: 16px
@@ -280,57 +306,55 @@ header
       margin-top: 0
 
     span
-      color: #1e1e1e
+      color: #281e1e
       font-size: 18px
-      text-transform: none
+      text-transform: uppercase
 
   &__watch
     margin-top: 10px
     position: relative
     float: left
-    width: 320px
-    margin-left: 150px
+    width: 340px
+    margin-left: 70px
 
     img
-      width: 320px
-      height: 520px
+      width: 340px
+      height: 550px
       position: relative
       display: block
     .prev
       position: absolute
       content: ""
-      +s(specs_prev--grey)
-      top: 45%
-      left: -100px
+      +s(prev)
+      top: 41%
+      left: -70px
       cursor: pointer
-      &:hover
-        +s(specs_prev)
+
     .next
       position: absolute
       content: ""
-      +s(specs_next--grey)
-      top: 45%
-      right: -100px
+      +s(next)
+      top: 41%
+      right: -70px
       cursor: pointer
-      &:hover
-        +s(specs_next)
+
     .threesixty
       position: absolute
       text-align: center
-      padding-top: 35px
+      padding-top: 27px
       +box
-      top: 15px
+      top: 30px
       right: -70px
       +s(360)
-      font-size: 36px
-      color: #aa2828
+      font-size: 30px
+      color: #281e1e
       content: ""
-      font-family: 'code_pro_boldregular'
+      font-family: 'conv_pfdintextcondpro-bold'
 
 
 
 .photos
-  padding: 35px 0
+  padding: 40px 0
   +box
   +clr
   .photos_in
@@ -339,8 +363,8 @@ header
   .photo__item
     position: relative
     display: inline-block
-    width: 330px
-    height: 200px
+    width: 320px
+    height: 180px
     vertical-align: top
     margin-right: 1px
     &:last-child
@@ -351,7 +375,7 @@ header
       left: 0
       right: 0
       bottom: 0
-      background: rgba(#000, .7)
+      background: rgba(#463223, .8)
       +opacity(0)
       z-index: 1
       +transition(background, .5s)
@@ -373,29 +397,29 @@ header
   content: ''
   top: 14px
   left: 0
-  width: 330px
-  height: 200px
+  width: 320px
+  height: 180px
   +transition(background, .5s)
   &:hover
-    +background-image(linear-gradient(to right, rgba(#fff,1), rgba(#fff,0)))
+    background: rgba(#f5e6d7, .6)
   &:before
     position: absolute
     content: ""
     top: 38%
     left: 0
-    +s(prev_ico)
+    //+s(prev_ico)
 .slick-next
-  right: 0
+  right: 15px
   left: auto
   &:hover
-    +background-image(linear-gradient(to right, rgba(#fff,0), rgba(#fff, 1)))
+    background: rgba(#f5e6d7, .6)
   &:before
     position: absolute
     content: ""
     top: 38%
     right: 5px
     left: auto
-    +s(next_ico)
+    //+s(next_ico)
 
 
 .our
