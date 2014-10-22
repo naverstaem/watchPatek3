@@ -422,6 +422,52 @@ header
     //+s(next_ico)
 
 
+.reviews
+  +clr
+  margin-top: 15px
+  padding-bottom: 60px
+  h2
+    margin-bottom: 35px
+  .reviews_in
+    @extend %in
+    +clr
+  .review__item
+    +background-clip(padding-box)
+    width: 300px
+    position: relative
+    display: inline-block
+    margin-right: 42px
+    +border-radius(8px)
+    +background-clip(padding-box)
+    padding: 18px
+    background: #efebe1
+    +box-shadow(inset 0 -2px 0 rgba(0,0,0,.1))
+    +box
+    +clr
+    &:last-child
+      margin-right: 0
+    &:after
+      position: absolute
+      content: ""
+      bottom: -30px
+      left: 15px
+      +s(review_popup)
+
+    h3
+      color: #3c3c3c
+      font-size: 18px
+      font-family: 'conv_pfdintextcondpro-light'
+      text-transform: uppercase
+      margin-bottom: 10px
+      font-weight: normal
+    p
+      +pfl
+      color: #3c3c3c
+      font-size: 16px
+
+
+
+
 .our
   background: url(../img/our_bg.jpg) center no-repeat
   +background-size(cover)
@@ -500,49 +546,6 @@ header
       left: -75px
       content: ""
       +s(bubble_ico)
-
-
-.reviews
-  +clr
-  margin-top: 65px
-  padding-bottom: 60px
-  h2
-    margin-bottom: 35px
-  .reviews_in
-    @extend %in
-    +clr
-  .review__item
-    +background-clip(padding-box)
-    width: 300px
-    position: relative
-    display: inline-block
-    margin-right: 42px
-    +border-radius(8px)
-    +background-clip(padding-box)
-    padding: 18px
-    background: #efefef
-    +box
-    +clr
-    &:last-child
-      margin-right: 0
-    &:after
-      position: absolute
-      content: ""
-      bottom: -34px
-      left: 15px
-      +s(review_popup)
-
-    h3
-      color: #3c3c3c
-      font-size: 18px
-      font-family: 'conv_pfdintextcondpro-light'
-      text-transform: uppercase
-      margin-bottom: 10px
-      font-weight: normal
-    p
-      +pfl
-      color: #3c3c3c
-      font-size: 16px
 
 
 
