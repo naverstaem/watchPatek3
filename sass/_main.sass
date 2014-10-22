@@ -177,74 +177,75 @@ header
 
 .history
   padding-top: 60px
-  background: #fff
+  background: rgb(70,50,35)
   +box
   +clr
+  position: relative
+  &__shadow
+    position: absolute
+    background: url(../img/shadow.png) center center no-repeat
+    width: 1200px
+    height: 30px
+    top: 0
+    left: 50%
+    +transform(translateX(-50%))
+  h2
+    text-align: center
+    text-transform: uppercase
+    color: #ebd7a5
+    font-family: 'conv_pfdintextcondpro-thin'
+    font-weight: normal
+    font-size: 36px
   .history_in
     @extend %in
-    width: 980px
-    padding-top: 35px
+    width: 870px
     +clr
   .history__block
     margin-top: 0
     +clr
+    margin-left: -30px
+
     .history__block--right
-      float: right
-      width: 640px
+      float: left
+      width: 595px
       +clr
+      margin-top: 70px
+      margin-left: 30px
+
       p
         font-size: 18px
         margin-bottom: 28px
-        color: #1e1e1e
+        color: #ebd7a5
         +pfl
         line-height: 1.5em
+      a
+        display: inline-block
+        +pfl
+        font-size: 18px
+        text-transform: uppercase
+        color: white
+        &:hover
+          text-decoration: none
+        i
+          display: inline-block
+          +s(play)
+          vertical-align: middle
+          margin-right: 8px
+
 
     .history__block--left
       float: left
-      width: 320px
+      width: 225px
       +clr
-      a
-        text-decoration: none
-        color: inherit
+      margin-top: -90px
 
       .history__img
         position: relative
         display: block
-        width: 320px
-        height: 200px
+        width: 225px
+        height: 510px
         text-align: center
         +clr
-        p
-          color: #1e1e1e
-          font-size: 14px
-          font-family: 'conv_segoeprintregular'
-          text-decoration: none
-          letter-spacing: -1px
-          padding-top: 10px
-        &:hover
-          text-decoration: underline
-        img
-          display: block
-        .history__video
-          position: absolute
-          top: 0
-          bottom: 0
-          right: 0
-          left: 0
-          background: rgba(#000, .6)
-          +opacity(0)
-          +border-radius(5px)
-          +transition(all .5s)
-          &:before
-            position: absolute
-            content: ""
-            +s(play)
-            top: 50%
-            left: 50%
-            +transform(translate(-50%, -50%))
-        &:hover
-          .history__video
-            +opacity(1)
 
 
 
