@@ -425,7 +425,7 @@ header
 .reviews
   +clr
   margin-top: 15px
-  padding-bottom: 60px
+  padding-bottom: 40px
   h2
     margin-bottom: 35px
   .row
@@ -520,18 +520,25 @@ header
     font-weight: normal
     color: #ffffff
     font-size: 36px
-    font-family: 'georgiaitalic'
+    font-family: 'conv_pfdintextcondpro-thin'
     text-align: center
     line-height: 1em
     text-transform: uppercase
   h2
-    color: white
+    @extend h3
+    font-family: 'conv_pfdintextcondpro-bold'
+    font-size: 60px
 
   .our_in
     @extend %in
     position: relative
     +clr
-
+  .girl
+    position: absolute
+    bottom: -79px
+    right: -130px
+    img
+      display: block
   .russia
     position: relative
     background: url(../img/russia.png) center center no-repeat
@@ -548,6 +555,7 @@ header
     left: 50%
     +transform(translate(-50%, -50%))
     margin-top: 60px
+    margin-left: 40px
     &:before
       position: absolute
       content: ""
@@ -558,6 +566,7 @@ header
     width: 600px
     margin: 55px auto 0
     position: relative
+    margin-left: 30px
   &__price
     width: 180px
     display: inline-block

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe, h1, header .header__logo h2, .bottom .header__logo h2, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, .bottom, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, header .header__logo h2, .bottom .header__logo h2, h2, h3, .our h2, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, .bottom, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
 body, html { height: 100%; }
 
@@ -12,7 +12,7 @@ textarea { overflow: auto; }
 
 input, button { margin: 0; padding: 0; border: 0; }
 
-div, input, textarea, select, button, h1, header .header__logo h2, .bottom .header__logo h2, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+div, input, textarea, select, button, h1, header .header__logo h2, .bottom .header__logo h2, h2, h3, .our h2, h4, h5, h6, a, span, a:focus { outline: none; }
 
 ul, ol { list-style-type: none; }
 
@@ -57,7 +57,7 @@ input::placeholder, textarea::placeholder { font-size: 16px; color: #78694b; fon
 
 .form { width: 420px; position: relative; background: rgba(209, 179, 119, 0.5); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-bottom: 45px; }
 .form .caption { box-sizing: border-box; padding-top: 30px; height: 120px; text-align: center; background: #453123; }
-.form .caption h3 { margin-top: 0; margin-bottom: 0; font-size: 36px; font-weight: normal; text-align: center; font-family: "Conv_PFDinTextCondPro-Thin"; color: #ffffff; text-transform: uppercase; line-height: 1em; }
+.form .caption h3, .form .caption .our h2, .our .form .caption h2 { margin-top: 0; margin-bottom: 0; font-size: 36px; font-weight: normal; text-align: center; font-family: "Conv_PFDinTextCondPro-Thin"; color: #ffffff; text-transform: uppercase; line-height: 1em; }
 .form .caption h4 { margin-top: 0; margin-bottom: 28px; font-size: 24px; text-align: center; font-weight: normal; text-transform: uppercase; font-family: "conv_pfdintextcondpro-thin"; color: #ffffff; line-height: 1em; }
 
 .frm { position: relative; }
@@ -230,7 +230,7 @@ header .header__right:after, .bottom .header__right:after { content: " "; displa
 .slick-next:hover { background: rgba(245, 230, 215, 0.6); }
 .slick-next:before { position: absolute; content: ""; top: 38%; right: 5px; left: auto; }
 
-.reviews { *zoom: 1; margin-top: 15px; padding-bottom: 60px; }
+.reviews { *zoom: 1; margin-top: 15px; padding-bottom: 40px; }
 .reviews:after { content: " "; display: table; clear: both; }
 .reviews h2 { margin-bottom: 35px; }
 .reviews .row { margin-bottom: 30px; }
@@ -240,7 +240,7 @@ header .header__right:after, .bottom .header__right:after { content: " "; displa
 .reviews .review__item:after { content: " "; display: table; clear: both; }
 .reviews .review__item:last-child { margin-right: 0; }
 .reviews .review__item:after { position: absolute; content: ""; bottom: -30px; left: 15px; background: url('../img/icons-s4f58a80df3.png') 0 -734px no-repeat; width: 49px; height: 36px; }
-.reviews .review__item h3 { color: #3c3c3c; font-size: 18px; font-family: "conv_pfdintextcondpro-light"; text-transform: uppercase; margin-bottom: 10px; font-weight: normal; }
+.reviews .review__item h3, .reviews .review__item .our h2, .our .reviews .review__item h2 { color: #3c3c3c; font-size: 18px; font-family: "conv_pfdintextcondpro-light"; text-transform: uppercase; margin-bottom: 10px; font-weight: normal; }
 .reviews .review__item p { font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; color: #3c3c3c; font-size: 16px; }
 .reviews .review__buttons { clear: both; *zoom: 1; width: 460px; text-align: center; margin: 55px auto 0; }
 .reviews .review__buttons:after { content: " "; display: table; clear: both; }
@@ -252,14 +252,16 @@ header .header__right:after, .bottom .header__right:after { content: " "; displa
 
 .our { background: url(../img/our_bg.jpg) center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; height: 800px; padding-top: 65px; position: relative; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .our:after { content: " "; display: table; clear: both; }
-.our h3 { font-weight: normal; color: #ffffff; font-size: 36px; font-family: "georgiaitalic"; text-align: center; line-height: 1em; text-transform: uppercase; }
-.our h2 { color: white; }
+.our h3, .our h2 { font-weight: normal; color: #ffffff; font-size: 36px; font-family: "conv_pfdintextcondpro-thin"; text-align: center; line-height: 1em; text-transform: uppercase; }
+.our h2 { font-family: "conv_pfdintextcondpro-bold"; font-size: 60px; }
 .our .our_in { position: relative; *zoom: 1; }
 .our .our_in:after { content: " "; display: table; clear: both; }
+.our .girl { position: absolute; bottom: -79px; right: -130px; }
+.our .girl img { display: block; }
 .our .russia { position: relative; background: url(../img/russia.png) center center no-repeat; width: 860px; height: 515px; margin: -60px auto 0; }
-.our__delivery { width: 170px; color: #ffffff; font-family: "conv_pfdintextcondpro-regular"; font-size: 18px; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); margin-top: 60px; }
+.our__delivery { width: 170px; color: #ffffff; font-family: "conv_pfdintextcondpro-regular"; font-size: 18px; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); margin-top: 60px; margin-left: 40px; }
 .our__delivery:before { position: absolute; content: ""; background: url('../img/icons-s4f58a80df3.png') 0 -344px no-repeat; width: 120px; height: 160px; top: -73px; left: -132px; }
-.our__bottom { width: 600px; margin: 55px auto 0; position: relative; }
+.our__bottom { width: 600px; margin: 55px auto 0; position: relative; margin-left: 30px; }
 .our__price { width: 180px; display: inline-block; position: relative; margin-right: 170px; margin-left: 50px; color: #ffffff; font-size: 18px; font-family: "conv_pfdintextcondpro-regular"; }
 .our__price:before { position: absolute; top: -8px; left: -75px; content: ""; background: url('../img/icons-s4f58a80df3.png') 0 -664px no-repeat; width: 60px; height: 60px; }
 .our__support { width: 190px; display: inline-block; position: relative; font-size: 18px; color: #ffffff; font-family: "conv_pfdintextcondpro-regular"; }
@@ -274,8 +276,8 @@ header .header__right:after, .bottom .header__right:after { content: " "; displa
 .order__img { display: inline-block; margin-bottom: 15px; width: 170px; height: 308px; }
 .order__img img { display: block; }
 .order__price { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 2em; }
-.order__price h3 { font-family: "code_pro_lcregular"; font-size: 36px; font-weight: normal; color: #be0a0a; }
-.order__price h3 span { font-family: "conv_pfdintextcondpro-light"; font-size: 18px; }
+.order__price h3, .order__price .our h2, .our .order__price h2 { font-family: "code_pro_lcregular"; font-size: 36px; font-weight: normal; color: #be0a0a; }
+.order__price h3 span, .order__price .our h2 span, .our .order__price h2 span { font-family: "conv_pfdintextcondpro-light"; font-size: 18px; }
 .order__price h4 { color: #787878; font-size: 18px; font-family: "conv_pfdintextcondpro-light"; font-weight: normal; }
 .order__text { padding: 20px 15px 0; font-size: 16px; color: #787878; text-align: left; }
 .order__form { margin-top: -5px; }
