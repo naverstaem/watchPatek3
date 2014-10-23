@@ -170,7 +170,7 @@ header
   display: none
   height: 60px
   +box
-  background: rgba(#efeff5, 0.8)
+  background: rgba(#d1b377, 0.8)
   .top
     height: 0
 
@@ -600,37 +600,38 @@ header
 
 
 .order
-  margin-top: 40px
   padding-bottom: 40px
+  padding-top: 60px
   .order_in
     @extend %in
   h2
-    margin-bottom: 30px
+    margin-bottom: 15px
+    text-align: center
   &__item
-    background: url("../img/order-item_bg--grey.png") no-repeat
+    background: #fff
     vertical-align: top
     width: 300px
-    height: 715px
+    height: 500px
     text-align: center
     padding-top: 25px
     display: inline-block
     margin-right: 45px
-    &.item--first
-      background: url(../img/order-item_bg.png) no-repeat
+    +border-radius(4px)
+
     +box
     &:last-child
       margin-right: 0
   &__caption
     font-size: 24px
-    font-family: 'conv_pfdintextcondpro-light'
-    margin-bottom: 20px
-    color: #1e1e1e
+    font-family: 'conv_pfdintextcondpro-thin'
+    margin-bottom: 0px
+    color: #000
     text-transform: uppercase
   &__img
     display: inline-block
     margin-bottom: 15px
-    width: 170px
-    height: 308px
+    width: 190px
+    height: 310px
     img
       display: block
   &__price
@@ -639,54 +640,46 @@ header
 
 
     h3
-      font-family: 'code_pro_lcregular'
+      font-family: 'conv_pfdintextcondpro-regular'
       font-size: 36px
       font-weight: normal
-      color: #be0a0a
+      color: #aa2828
       span
-        font-family: 'conv_pfdintextcondpro-light'
-        font-size: 18px
-    h4
-      color: #787878
-      font-size: 18px
-      font-family: 'conv_pfdintextcondpro-light'
-      font-weight: normal
+        font-family: 'als_rublregular'
+
   &__text
     padding: 20px 15px 0
     font-size: 16px
     color: #787878
     text-align: left
   &__form
-    margin-top: -5px
+    margin-top: 5px
     input
       width: 250px
       margin-bottom: 10px
       border: 2px solid #dbdbdb
       +border-radius(4px)
-    .button
 
 
 
 .bottom
-  height: 880px
+  height: 860px
   @extend header
-  padding-top: 190px
-  background: url(../img/bottom_bg.jpg) no-repeat center center
-  .header__main--main_in--bottom
-    margin-top: 55px !important
-
+  padding-top: 0
+  .header_in
+    margin-top: 0
 
 footer
   box-sizing: border-box
-  height: 84px
+  height: 110px
   @extend %in
   text-align: center
-  padding-top: 12px
+  padding-top: 20px
   p
     font-size: 16px
     color: #787878
     a
-      color: #5078b4
+      color: #be1e1e
       &:hover
         text-decoration: none
 
