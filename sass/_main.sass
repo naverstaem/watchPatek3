@@ -428,6 +428,8 @@ header
   padding-bottom: 60px
   h2
     margin-bottom: 35px
+  .row
+    margin-bottom: 30px
   .reviews_in
     @extend %in
     +clr
@@ -436,7 +438,7 @@ header
     width: 300px
     position: relative
     display: inline-block
-    margin-right: 42px
+    margin-right: 30px
     +border-radius(8px)
     +background-clip(padding-box)
     padding: 18px
@@ -464,7 +466,45 @@ header
       +pfl
       color: #3c3c3c
       font-size: 16px
+  .review__buttons
+    clear: both
+    +clr
+    width: 460px
+    text-align: center
+    margin: 55px auto 0
+    %r-buttons
+      display: inline-block
+      width: 220px
+      height: 60px
+      +border-radius(4px)
+      +background-clip(padding-box)
+      border: solid 2px #453123
+      color: #463223
+      font-size: 18px
+      +box
+      padding-top: 15px
+      text-transform: uppercase
+      font-family: 'conv_pfdintextcondpro-light'
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+    .review__more-reviews
+      @extend %r-buttons
+      &:hover
+        +box-shadow(inset 0 0 3px 3px #453123)
 
+    .review__add-review
+      @extend %r-buttons
+      position: relative
+      top: -1px
+      padding-top: 17px
+      margin-left: 13px
+      color: #ffffff
+      border: none
+      +background(linear-gradient(to bottom, #6395bd 0%, #3b81af 100%))
+
+      &:hover
+        background: lighten(#6395bd, 10%)
 
 
 

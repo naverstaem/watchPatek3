@@ -77,9 +77,9 @@ head.ready(function() {
 
 //////////////////////////////////////////////////
 //more reviews show, when clicked
-//    $(".moreReviews").click(function(){
-//        $("#otherItems").slideToggle("normal"); return false;
-//    });
+    $("#moreReviews").click(function(){
+        $("#otherItems").slideToggle("normal"); return false;
+    });
 //===============================================
 //disable or enable button, when click on checkbox
 //    $("#form4 input.yes").change(function () {
